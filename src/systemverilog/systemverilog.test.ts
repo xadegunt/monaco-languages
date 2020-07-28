@@ -110,5 +110,44 @@ testTokenization('systemverilog', [
 			{ startIndex: 20, type: ''},
 			{ startIndex: 21, type: 'delimiter.curly.sv'}
 		]
-	}]
+	}],
+
+	[{
+		line: 'a !== b',
+		tokens: [
+			{ startIndex: 0, type: 'identifier.sv'},
+			{ startIndex: 1, type: ''},
+			{ startIndex: 2, type: 'delimiter.sv'},
+			{ startIndex: 5, type: ''},
+			{ startIndex: 6, type: 'identifier.sv'}
+		]
+	}],
+
+	[{
+		line: '!n',
+		tokens: [
+			{ startIndex: 0, type: 'delimiter.sv'},
+			{ startIndex: 1, type: 'identifier.sv'}
+		]
+	}],
+
+	[{
+		line: 'assign r = c + i;',
+		tokens: [
+			{ startIndex: 0, type: 'keyword.assign.sv'},
+			{ startIndex: 6, type : ''},
+			{ startIndex: 7, type: 'identifier.sv'},
+			{ startIndex: 8, type : ''},
+			{ startIndex: 9, type : 'delimiter.sv'},
+			{ startIndex: 10, type : ''},
+			{ startIndex: 11, type : 'identifier.sv'},
+			{ startIndex: 12, type : ''},
+			{ startIndex: 13, type : 'delimiter.sv'},
+			{ startIndex: 14, type : ''},
+			{ startIndex: 15, type : 'identifier.sv'},
+			{ startIndex: 16, type : 'delimiter.sv'},
+
+		]
+	}],
+
 ]);

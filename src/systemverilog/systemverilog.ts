@@ -324,7 +324,6 @@ export const language = <ILanguage>{
 		'dist',
 		'::',
 		'|->', '|=>'
-
 	],
 
 	// we include these common regular expressions
