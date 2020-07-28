@@ -234,11 +234,31 @@ export const language = <ILanguage>{
 	],
 
 	operators: [
-		'=', '>', '<', '!', '~', '?', ':',
-		'==', '<=', '>=', '!=', '&&', '||', '++', '--',
-		'+', '-', '*', '/', '&', '|', '^', '%', '<<',
-		'>>', '>>>', '+=', '-=', '*=', '/=', '&=', '|=',
-		'^=', '%=', '<<=', '>>=', '>>>='
+		// assignment operators
+		'=', '+=', '-=', '*=', '/=', '%=', '&=', '|=', '^=', '<<=',
+		'>>+', '<<<=', '>>>=',
+		// conditional expression
+		// ?: TODO
+		// Unary operators
+		'+', '-', '!', '~', '&', '~&', '|', '~|', '^', '~^', '^~',
+		//binary operators
+		'+', '-', '*', '/', '%', '==', '!=', '===', '!==', '==?',
+		'!=?', '&&', '||', '**', '<', '<=', '>', '>=', '&', '|', '^',
+		'^~', '~^', '>>', '<<', '>>>', '<<<',
+		// increment or decrement operator
+		'++', '--',
+		//binary logical operator
+		'->', '<->',
+		// binary set membership operator
+		'inside',
+		// binary distrubution operator
+		'dist',
+		'::'
+		// concatenation operator
+		//'{}', '{{}}', // TODO
+		// stream operator
+		//'{<<{}}', '{>>{}}' // TODO
+
 	],
 
 	// we include these common regular expressions
