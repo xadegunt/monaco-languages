@@ -298,8 +298,7 @@ export const language = <ILanguage>{
 		'within', 
 		'wor', 
 		'xnor', 
-		'xor',
-
+		'xor'
 	],
 
 	operators: [
