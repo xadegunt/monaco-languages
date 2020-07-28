@@ -146,8 +146,7 @@ testTokenization('systemverilog', [
 			{ startIndex: 14, type : ''},
 			{ startIndex: 15, type : 'identifier.sv'},
 			{ startIndex: 16, type : 'delimiter.sv'},
-
 		]
-	}],
+	}]
 
 ]);
