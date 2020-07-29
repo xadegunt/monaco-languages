@@ -357,7 +357,7 @@ export const language = <ILanguage>{
 			[/\d*\.\d+([eE][\-+]?\d+)?(@floatsuffix)/, 'number.float'],
 			[/[\-+]?\d*'s?[dD]([\-+]?\d+)?(@floatsuffix)/, 'number.float'],
 			[/0[xX][0-9a-fA-F']*[0-9a-fA-F](@integersuffix)/, 'number.hex'],
-			[/[\-+]?\d*'s?[hH]([0-9a-fA-F]+)?(@integersuffix)/, 'number'],
+			[/[\-+]?\d*'s?[hH]([0-9a-fA-F]+)?(@integersuffix)/, 'number.hex'],
 			[/0[0-7']*[0-7](@integersuffix)/, 'number.octal'],
 			[/[\-+]?\d*'s?[oO]([0-7]+)?(@integersuffix)/, 'number.octal'],
 			[/0[bB][0-1']*[0-1](@integersuffix)/, 'number.binary'],
